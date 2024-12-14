@@ -82,8 +82,9 @@ namespace LobbyCodeToDiscord
 
             RegisterCommand("send_code", (player, args) =>
             {
-                if (send()) Log("Sent code successfully!");
-                else Log("Nothing sent, check your configs");
+                if (!IsPlayerAdmin(player)) return;
+                if (send()) SendPlayerChatMessage(player, "Sent code successfully!");
+                else SendPlayerChatMessage(player, "Nothing sent, check your configs");
             });
             SetCommandDescription("send_code", "Sends lobby code manually");
         }
