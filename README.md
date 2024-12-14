@@ -1,4 +1,4 @@
-# LobbyCodeToDiscordPlugin
+# LobbyCodeToDiscord
 A plugin for Cove Webfishing to send Lobby code to discord
 
 ## Install
