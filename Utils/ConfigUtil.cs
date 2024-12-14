@@ -22,7 +22,7 @@ namespace LobbyCodeToDiscord.Utils
                 "# If Message ID is blank, it'll send a new message instead of editing\n" +
                 "message_id = <MESSAGE_ID>\n\n" +
                 "# The message to send, use $lobby_code to replace with the code\n" +
-                "message = New lobby code is $lobby_code" +
+                "message = New lobby code is $lobby_code\n" +
                 "# To disable anything please set it to null";
             TextWriter file = new StreamWriter(path);
             file.Write(data);
